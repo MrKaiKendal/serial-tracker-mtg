@@ -29,11 +29,3 @@ const knownSerials = {
 proof: "images/352.jpg"
   }
 };
- 102: {
-    status: "Confirmed",
-    owner: "therealamericanbeauty",
-    note: "Listing found on eBay. Serial number #352 confirmed.",
-    image: "images/102.jpg",
-proof: "images/102.jpg"
-  }
-};
