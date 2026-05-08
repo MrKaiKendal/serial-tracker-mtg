@@ -1,7 +1,9 @@
 const trackerGrid = document.getElementById("tracker-grid");
+const confirmedList = document.getElementById("confirmed-list");
 const confirmedCount = document.getElementById("confirmed-count");
 const pendingCount = document.getElementById("pending-count");
 const unknownCount = document.getElementById("unknown-count");
+
 // Add confirmed or pending serials below.
 // Example format:
 //
@@ -20,14 +22,15 @@ const unknownCount = document.getElementById("unknown-count");
 //   image: "IMAGE-LINK-HERE",
 //   proof: "PROOF-LINK-HERE"
 // }
+
 const knownSerials = {
- 352: {
-  status: "Confirmed",
-  owner: "MrKaiKendal",
-  note: "Owned by site creator. Serial number #352 confirmed.",
-  image: "352.jpg",
-  proof: "352.jpg"
-}
+  352: {
+    status: "Confirmed",
+    owner: "MrKaiKendal",
+    note: "Owned by site creator. Serial number #352 confirmed.",
+    image: "352.jpg",
+    proof: "352.jpg"
+  }
 };
 
 const totalConfirmed = Object.values(knownSerials).filter(function (card) {
@@ -43,6 +46,42 @@ const totalKnown = Object.keys(knownSerials).length;
 confirmedCount.textContent = totalConfirmed;
 pendingCount.textContent = totalPending;
 unknownCount.textContent = 500 - totalKnown;
+
+if (confirmedList) {
+  const confirmedEntries = Object.entries(knownSerials).filter(function (entry) {
+    return entry[1].status === "Confirmed";
+  });
+
+  if (confirmedEntries.length === 0) {
+    confirmedList.innerHTML = `
+      <p class="confirmed-list-empty">No confirmed serials yet.</p>
+    `;
+  } else {
+    confirmedEntries.forEach(function (entry) {
+      const number = Number(entry[0]);
+      const cardInfo = entry[1];
+      const serialText = String(number).padStart(3, "0");
+
+      const listItem = document.createElement("div");
+      listItem.className = "confirmed-list-item";
+
+      listItem.innerHTML = `
+        <div>
+          <div class="confirmed-list-number">#${serialText}</div>
+          <div class="confirmed-list-details">${cardInfo.status} — ${cardInfo.owner}</div>
+        </div>
+
+        <button class="button secondary-button" type="button">View Details</button>
+      `;
+
+      listItem.querySelector("button").addEventListener("click", function () {
+        openCardDetails(number);
+      });
+
+      confirmedList.appendChild(listItem);
+    });
+  }
+}
 
 for (let number = 1; number <= 500; number++) {
   const serialText = String(number).padStart(3, "0");
