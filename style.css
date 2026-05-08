@@ -242,3 +242,9 @@ h1 {
   box-shadow: 0 0 22px rgba(255, 255, 255, 0.25);
   transform: scale(1.03);
 }
+.search-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
