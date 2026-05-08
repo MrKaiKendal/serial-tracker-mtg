@@ -434,3 +434,15 @@ h1 {
   margin-top: -8px;
   margin-bottom: 18px;
 }
+.pending {
+  color: #ffd36a;
+}
+
+.pending-card {
+  border-color: #ffd36a;
+  box-shadow: 0 0 18px rgba(255, 211, 106, 0.15);
+}
+
+.pending-dot {
+  background: #ffd36a;
+}
