@@ -32,6 +32,7 @@ for (let number = 1; number <= 500; number++) {
 
   trackerGrid.appendChild(card);
 }
+
 const searchInput = document.getElementById("serial-search");
 const searchButton = document.getElementById("search-button");
 
