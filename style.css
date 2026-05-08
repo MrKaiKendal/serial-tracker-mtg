@@ -335,3 +335,18 @@ h1 {
 .modal-info a {
   color: #7cff8a;
 }
+.tracker-stats {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 28px 0;
+}
+
+.tracker-stat-box {
+  background: #101410;
+  border: 1px solid #2d3a2d;
+  border-radius: 14px;
+  padding: 18px;
+  flex: 1;
+  min-width: 150px;
+}
