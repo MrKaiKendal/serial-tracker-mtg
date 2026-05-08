@@ -7,16 +7,16 @@ const confirmedSerials = {
     status: "Confirmed",
     owner: "Example Owner",
     note: "Example entry. Replace this later with real card information.",
-    image: "mox-jasper-352.jpg",
-    proof: "mox-jasper-352.jpg"
+    image: "https://via.placeholder.com/400x560?text=Mox+Jasper+%23352,
+    proof: "https://example.com"
   },
 
   352: {
     status: "Confirmed",
     owner: "MrKaiKendal",
     note: "Owned by site creator. Serial number #352 confirmed.",
-    image: "https://via.placeholder.com/400x560?text=Mox+Jasper+%23352",
-    proof: "https://example.com"
+    image: "mox-jasper-352.jpg",
+    proof: "mox-jasper-352.jpg"
   }
 };
 
