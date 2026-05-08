@@ -92,7 +92,8 @@ function openCardDetails(number) {
     modalProof.style.display = "none";
 
     modalSubmit.style.display = "inline-block";
-    modalSubmit.href = "submit.html";
+modalSubmit.href = "submit.html";
+modalSubmit.textContent = "Submit This Serial";
   }
 
   modal.classList.remove("hidden");
