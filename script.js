@@ -1,5 +1,6 @@
 const trackerGrid = document.getElementById("tracker-grid");
-
+const confirmedCount = document.getElementById("confirmed-count");
+const unknownCount = document.getElementById("unknown-count");
 const confirmedSerials = {
   1: {
     status: "Confirmed",
@@ -7,6 +8,10 @@ const confirmedSerials = {
     note: "Example entry. Replace this later with real card information.",
     image: "https://via.placeholder.com/400x560?text=Mox+Jasper+%23001",
     proof: "https://example.com"
+    const totalConfirmed = Object.keys(confirmedSerials).length;
+
+confirmedCount.textContent = totalConfirmed;
+unknownCount.textContent = 500 - totalConfirmed;
   }
 };
 
