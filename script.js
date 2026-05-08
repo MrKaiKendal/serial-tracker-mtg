@@ -7,8 +7,8 @@ const confirmedSerials = {
     status: "Confirmed",
     owner: "Example Owner",
     note: "Example entry. Replace this later with real card information.",
-    image: "https://via.placeholder.com/400x560?text=Mox+Jasper+%23001",
-    proof: "https://example.com"
+    image: "mox-jasper-352.jpg",
+    proof: "mox-jasper-352.jpg"
   },
 
   352: {
