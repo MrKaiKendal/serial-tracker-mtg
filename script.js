@@ -2,34 +2,46 @@ const trackerGrid = document.getElementById("tracker-grid");
 const confirmedCount = document.getElementById("confirmed-count");
 const unknownCount = document.getElementById("unknown-count");
 
-const confirmedSerials = {
+const knownSerials = {
   352: {
-  status: "Confirmed",
-  owner: "MrKaiKendal",
-  note: "Owned by site creator. Serial number #352 confirmed.",
-  image: "https://github.com/MrKaiKendal/serial-tracker-mtg/blob/main/mox-jasper-352.jpg?raw=true",
-  proof: "https://github.com/MrKaiKendal/serial-tracker-mtg/blob/main/mox-jasper-352.jpg"
-}
+    status: "Confirmed",
+    owner: "MrKaiKendal",
+    note: "Owned by site creator. Serial number #352 confirmed.",
+    image: "https://github.com/MrKaiKendal/serial-tracker-mtg/blob/main/mox-jasper-352.jpg?raw=true",
+    proof: "https://github.com/MrKaiKendal/serial-tracker-mtg/blob/main/mox-jasper-352.jpg"
+  }
 };
 
-const totalConfirmed = Object.keys(confirmedSerials).length;
+const totalConfirmed = Object.values(knownSerials).filter(function (card) {
+  return card.status === "Confirmed";
+}).length;
+
+const totalKnown = Object.keys(knownSerials).length;
 
 confirmedCount.textContent = totalConfirmed;
-unknownCount.textContent = 500 - totalConfirmed;
+unknownCount.textContent = 500 - totalKnown;
 
 for (let number = 1; number <= 500; number++) {
   const serialText = String(number).padStart(3, "0");
-  const confirmedInfo = confirmedSerials[number];
+  const cardInfo = knownSerials[number];
 
   const card = document.createElement("div");
 
-  if (confirmedInfo) {
+  if (cardInfo && cardInfo.status === "Confirmed") {
     card.className = "serial-card confirmed-card";
 
     card.innerHTML = `
       <div class="serial-number">#${serialText}</div>
-      <div class="serial-status confirmed">${confirmedInfo.status}</div>
-      <div class="serial-note">${confirmedInfo.owner}</div>
+      <div class="serial-status confirmed">Confirmed</div>
+      <div class="serial-note">${cardInfo.owner}</div>
+    `;
+  } else if (cardInfo && cardInfo.status === "Pending Review") {
+    card.className = "serial-card pending-card";
+
+    card.innerHTML = `
+      <div class="serial-number">#${serialText}</div>
+      <div class="serial-status pending">Pending Review</div>
+      <div class="serial-note">${cardInfo.owner}</div>
     `;
   } else {
     card.className = "serial-card";
@@ -61,20 +73,29 @@ const modalSubmit = document.getElementById("modal-submit");
 
 function openCardDetails(number) {
   const serialText = String(number).padStart(3, "0");
-  const cardInfo = confirmedSerials[number];
+  const cardInfo = knownSerials[number];
 
   modalTitle.textContent = `Mox Jasper #${serialText}`;
 
   if (cardInfo) {
-    modalImage.src = cardInfo.image;
-    modalImage.style.display = "block";
-
     modalStatus.textContent = cardInfo.status;
     modalOwner.textContent = cardInfo.owner;
     modalNotes.textContent = cardInfo.note;
 
-    modalProof.href = cardInfo.proof;
-    proofLine.style.display = "block";
+    if (cardInfo.image) {
+      modalImage.src = cardInfo.image;
+      modalImage.style.display = "block";
+    } else {
+      modalImage.style.display = "none";
+    }
+
+    if (cardInfo.proof) {
+      modalProof.href = cardInfo.proof;
+      proofLine.style.display = "block";
+    } else {
+      modalProof.href = "#";
+      proofLine.style.display = "none";
+    }
 
     modalSubmit.style.display = "none";
   } else {
