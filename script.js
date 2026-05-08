@@ -7,8 +7,8 @@ const confirmedSerials = {
     status: "Confirmed",
     owner: "MrKaiKendal",
     note: "Owned by site creator. Serial number #352 confirmed.",
-    image: "mox-jasper-352.jpeg",
-    proof: "mox-jasper-352.jpeg"
+    image: "mox-jasper-352.jpg",
+    proof: "mox-jasper-352.jpg"
   }
 };
 
