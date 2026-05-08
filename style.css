@@ -428,3 +428,9 @@ h1 {
 .site-footer p {
   margin: 0;
 }
+.last-updated {
+  color: #9a9a9a;
+  font-size: 14px;
+  margin-top: -8px;
+  margin-bottom: 18px;
+}
