@@ -33,8 +33,9 @@ for (let number = 1; number <= 500; number++) {
   trackerGrid.appendChild(card);
 }
 const searchInput = document.getElementById("serial-search");
+const searchButton = document.getElementById("search-button");
 
-searchInput.addEventListener("input", function () {
+function searchSerial() {
   const searchNumber = Number(searchInput.value);
   const allCards = document.querySelectorAll(".serial-card");
 
@@ -44,10 +45,20 @@ searchInput.addEventListener("input", function () {
 
   if (searchNumber >= 1 && searchNumber <= 500) {
     const cardToHighlight = allCards[searchNumber - 1];
+
     cardToHighlight.classList.add("highlight-card");
+
     cardToHighlight.scrollIntoView({
       behavior: "smooth",
       block: "center"
     });
+  }
+}
+
+searchButton.addEventListener("click", searchSerial);
+
+searchInput.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    searchSerial();
   }
 });
