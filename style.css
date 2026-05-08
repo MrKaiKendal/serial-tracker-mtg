@@ -350,3 +350,11 @@ h1 {
   flex: 1;
   min-width: 150px;
 }
+#modal-submit {
+  color: #061006 !important;
+  background: #7cff8a;
+  display: inline-block;
+  margin-top: 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
