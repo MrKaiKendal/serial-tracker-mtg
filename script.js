@@ -1,5 +1,6 @@
 const trackerGrid = document.getElementById("tracker-grid");
 const confirmedCount = document.getElementById("confirmed-count");
+const pendingCount = document.getElementById("pending-count");
 const unknownCount = document.getElementById("unknown-count");
 
 const knownSerials = {
@@ -16,9 +17,14 @@ const totalConfirmed = Object.values(knownSerials).filter(function (card) {
   return card.status === "Confirmed";
 }).length;
 
+const totalPending = Object.values(knownSerials).filter(function (card) {
+  return card.status === "Pending Review";
+}).length;
+
 const totalKnown = Object.keys(knownSerials).length;
 
 confirmedCount.textContent = totalConfirmed;
+pendingCount.textContent = totalPending;
 unknownCount.textContent = 500 - totalKnown;
 
 for (let number = 1; number <= 500; number++) {
