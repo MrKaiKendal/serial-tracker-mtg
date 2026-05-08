@@ -248,3 +248,32 @@ h1 {
   flex-wrap: wrap;
   align-items: center;
 }
+.legend {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 24px 0;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #d7d7d7;
+  font-weight: bold;
+}
+
+.legend-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.confirmed-dot {
+  background: #7cff8a;
+}
+
+.unknown-dot {
+  background: #777;
+}
