@@ -84,3 +84,48 @@ h1 {
 .button:hover {
   background: #a0ffaa;
 }
+.page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.wide-card {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.tracker-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.serial-card {
+  background: #101410;
+  border: 1px solid #2d3a2d;
+  border-radius: 14px;
+  padding: 18px;
+  text-align: center;
+}
+
+.serial-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.serial-status {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.unknown {
+  color: #9a9a9a;
+}
+
+.confirmed {
+  color: #7cff8a;
+}
