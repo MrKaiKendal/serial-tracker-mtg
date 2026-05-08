@@ -2,7 +2,24 @@ const trackerGrid = document.getElementById("tracker-grid");
 const confirmedCount = document.getElementById("confirmed-count");
 const pendingCount = document.getElementById("pending-count");
 const unknownCount = document.getElementById("unknown-count");
-
+// Add confirmed or pending serials below.
+// Example format:
+//
+// 127: {
+//   status: "Pending Review",
+//   owner: "Submitted by Name",
+//   note: "Waiting for verification.",
+//   image: "",
+//   proof: ""
+// },
+//
+// 352: {
+//   status: "Confirmed",
+//   owner: "MrKaiKendal",
+//   note: "Owned by site creator. Serial number #352 confirmed.",
+//   image: "IMAGE-LINK-HERE",
+//   proof: "PROOF-LINK-HERE"
+// }
 const knownSerials = {
   352: {
     status: "Confirmed",
