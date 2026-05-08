@@ -30,6 +30,7 @@ for (let number = 1; number <= 500; number++) {
 
   if (confirmedInfo) {
     card.className = "serial-card confirmed-card";
+
     card.innerHTML = `
       <div class="serial-number">#${serialText}</div>
       <div class="serial-status confirmed">${confirmedInfo.status}</div>
@@ -37,6 +38,7 @@ for (let number = 1; number <= 500; number++) {
     `;
   } else {
     card.className = "serial-card";
+
     card.innerHTML = `
       <div class="serial-number">#${serialText}</div>
       <div class="serial-status unknown">Unknown</div>
@@ -59,6 +61,7 @@ const modalStatus = document.getElementById("modal-status");
 const modalOwner = document.getElementById("modal-owner");
 const modalNotes = document.getElementById("modal-notes");
 const modalProof = document.getElementById("modal-proof");
+const modalSubmit = document.getElementById("modal-submit");
 
 function openCardDetails(number) {
   const serialText = String(number).padStart(3, "0");
@@ -69,18 +72,27 @@ function openCardDetails(number) {
   if (cardInfo) {
     modalImage.src = cardInfo.image;
     modalImage.style.display = "block";
+
     modalStatus.textContent = cardInfo.status;
     modalOwner.textContent = cardInfo.owner;
     modalNotes.textContent = cardInfo.note;
+
     modalProof.href = cardInfo.proof;
     modalProof.style.display = "inline";
+
+    modalSubmit.style.display = "none";
   } else {
     modalImage.style.display = "none";
+
     modalStatus.textContent = "Unknown";
     modalOwner.textContent = "No confirmed owner/submission yet.";
     modalNotes.textContent = "This serial number has not been confirmed.";
+
     modalProof.href = "#";
     modalProof.style.display = "none";
+
+    modalSubmit.style.display = "inline-block";
+    modalSubmit.href = "submit.html";
   }
 
   modal.classList.remove("hidden");
