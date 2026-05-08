@@ -154,3 +154,29 @@ h1 {
 .secondary-button:hover {
   background: #333;
 }
+.submit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 30px 0;
+}
+
+.submit-form label {
+  font-weight: bold;
+  color: #f2f2f2;
+}
+
+.submit-form input,
+.submit-form textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #444;
+  background: #101410;
+  color: white;
+  font-size: 16px;
+}
+
+.submit-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
