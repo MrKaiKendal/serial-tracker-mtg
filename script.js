@@ -21,13 +21,13 @@ const unknownCount = document.getElementById("unknown-count");
 //   proof: "PROOF-LINK-HERE"
 // }
 const knownSerials = {
-  352: {
-    status: "Confirmed",
-    owner: "MrKaiKendal",
-    note: "Owned by site creator. Serial number #352 confirmed.",
-    image: "https://github.com/MrKaiKendal/serial-tracker-mtg/blob/main/mox-jasper-352.jpg?raw=true",
-    proof: "https://github.com/MrKaiKendal/serial-tracker-mtg/blob/main/mox-jasper-352.jpg"
-  }
+ 352: {
+  status: "Confirmed",
+  owner: "MrKaiKendal",
+  note: "Owned by site creator. Serial number #352 confirmed.",
+  image: "352.jpg",
+  proof: "352.jpg"
+}
 };
 
 const totalConfirmed = Object.values(knownSerials).filter(function (card) {
