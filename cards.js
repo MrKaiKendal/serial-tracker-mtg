@@ -25,7 +25,7 @@ const knownSerials = {
     status: "Confirmed",
     owner: "MrKaiKendal",
     note: "Owned by site creator. Serial number #352 confirmed.",
-    image: "352.jpg",
-    proof: "352.jpg"
+    image: "images/352.jpg",
+proof: "images/352.jpg"
   }
 };
