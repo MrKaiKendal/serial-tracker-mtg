@@ -180,3 +180,21 @@ h1 {
   min-height: 120px;
   resize: vertical;
 }
+.submit-box {
+  background: #101410;
+  border: 1px solid #2d3a2d;
+  border-radius: 16px;
+  padding: 28px;
+  margin: 30px 0;
+}
+
+.submit-box h2 {
+  margin-top: 0;
+  color: #7cff8a;
+}
+
+.submit-box p {
+  color: #d7d7d7;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
