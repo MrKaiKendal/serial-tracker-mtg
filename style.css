@@ -571,3 +571,36 @@ h2 {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
+.confirmed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.confirmed-list-item {
+  background:
+    linear-gradient(145deg, #15100b, #24150b);
+  border: 1px solid #8b5a2b;
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.confirmed-list-number {
+  color: #f5b35c;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.confirmed-list-details {
+  color: #e8d2b3;
+}
+
+.confirmed-list-empty {
+  color: #b9966d;
+  font-style: italic;
+}
