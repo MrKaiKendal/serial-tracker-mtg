@@ -431,7 +431,7 @@ h1 {
 .last-updated {
   color: #9a9a9a;
   font-size: 14px;
-  margin-top: -8px;
+  margin-top: 4px;
   margin-bottom: 18px;
 }
 .pending {
