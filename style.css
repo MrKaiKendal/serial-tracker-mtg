@@ -198,3 +198,20 @@ h1 {
   line-height: 1.6;
   margin-bottom: 24px;
 }
+.info-section {
+  background: #101410;
+  border: 1px solid #2d3a2d;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 30px 0;
+}
+
+.info-section h2 {
+  margin-top: 0;
+  color: #7cff8a;
+}
+
+.info-section p {
+  color: #d7d7d7;
+  line-height: 1.6;
+}
