@@ -416,3 +416,15 @@ h1 {
 .home-button-row {
   margin-top: 24px;
 }
+.site-footer {
+  border-top: 1px solid #2d3a2d;
+  padding: 24px;
+  text-align: center;
+  color: #9a9a9a;
+  background: #101410;
+  font-size: 14px;
+}
+
+.site-footer p {
+  margin: 0;
+}
