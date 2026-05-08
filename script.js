@@ -4,12 +4,12 @@ const unknownCount = document.getElementById("unknown-count");
 
 const confirmedSerials = {
   352: {
-    status: "Confirmed",
-    owner: "MrKaiKendal",
-    note: "Owned by site creator. Serial number #352 confirmed.",
-    image: "mox-jasper-352.jpg",
-    proof: "https://github.com/MrKaiKendal/serial-tracker-mtg/blob/6b9574ac9cc305390464d45f492834e2edd8e211/mox-japser-352.jpg"
-  }
+  status: "Confirmed",
+  owner: "MrKaiKendal",
+  note: "Owned by site creator. Serial number #352 confirmed.",
+  image: "https://github.com/MrKaiKendal/serial-tracker-mtg/blob/main/mox-jasper-352.jpg?raw=true",
+  proof: "https://github.com/MrKaiKendal/serial-tracker-mtg/blob/main/mox-jasper-352.jpg"
+}
 };
 
 const totalConfirmed = Object.keys(confirmedSerials).length;
