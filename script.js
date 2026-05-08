@@ -3,32 +3,19 @@ const confirmedCount = document.getElementById("confirmed-count");
 const unknownCount = document.getElementById("unknown-count");
 
 const confirmedSerials = {
-  1: {
-    status: "Confirmed",
-    owner: "Example Owner",
-    note: "Example entry. Replace this later with real card information.",
-    image: "https://via.placeholder.com/400x560?text=Mox+Jasper+%23352,
-    proof: "https://example.com"
-  },
-
   352: {
     status: "Confirmed",
     owner: "MrKaiKendal",
     note: "Owned by site creator. Serial number #352 confirmed.",
-    image: "mox-jasper-352.jpg",
-    proof: "mox-jasper-352.jpg"
+    image: "mox-jasper-352.jpeg",
+    proof: "mox-jasper-352.jpeg"
   }
 };
 
 const totalConfirmed = Object.keys(confirmedSerials).length;
 
-if (confirmedCount) {
-  confirmedCount.textContent = totalConfirmed;
-}
-
-if (unknownCount) {
-  unknownCount.textContent = 500 - totalConfirmed;
-}
+confirmedCount.textContent = totalConfirmed;
+unknownCount.textContent = 500 - totalConfirmed;
 
 for (let number = 1; number <= 500; number++) {
   const serialText = String(number).padStart(3, "0");
@@ -69,6 +56,7 @@ const modalStatus = document.getElementById("modal-status");
 const modalOwner = document.getElementById("modal-owner");
 const modalNotes = document.getElementById("modal-notes");
 const modalProof = document.getElementById("modal-proof");
+const proofLine = document.getElementById("proof-line");
 const modalSubmit = document.getElementById("modal-submit");
 
 function openCardDetails(number) {
@@ -86,7 +74,7 @@ function openCardDetails(number) {
     modalNotes.textContent = cardInfo.note;
 
     modalProof.href = cardInfo.proof;
-    modalProof.style.display = "inline";
+    proofLine.style.display = "block";
 
     modalSubmit.style.display = "none";
   } else {
@@ -97,11 +85,11 @@ function openCardDetails(number) {
     modalNotes.textContent = "This serial number has not been confirmed.";
 
     modalProof.href = "#";
-    modalProof.style.display = "none";
+    proofLine.style.display = "none";
 
+    modalSubmit.href = "submit.html";
+    modalSubmit.textContent = "Submit This Serial";
     modalSubmit.style.display = "inline-block";
-modalSubmit.href = "submit.html";
-modalSubmit.textContent = "Submit This Serial";
   }
 
   modal.classList.remove("hidden");
