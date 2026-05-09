@@ -2,31 +2,30 @@
 <html>
   <head>
     <title>Mox Jasper Tracker</title>
-    <p class="last-updated">Last updated: May 2026</p>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
   </head>
-<footer class="site-footer">
-  <p>
-    Mox Jasper Serialized Tracker is a fan-made project and is not affiliated with Wizards of the Coast.
-  </p>
-</footer>
+
   <body>
     <nav class="navbar">
-  <a class="nav-logo" href="index.html">Mox Jasper Tracker</a>
+      <a class="nav-logo" href="index.html">Mox Jasper Tracker</a>
 
-   <div class="nav-links">
-  <a href="index.html">Home</a>
-  <a href="tracker.html">Tracker</a>
-  <a href="submit.html">Submit</a>
-  <a href="about.html">About</a>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLScrl7_mSrgh9yv5SRMidlg3sxOol-Kw7fdh2qIpRb-uSu1Ktw/viewform?usp=header" target="_blank">Report Error</a>
-</div>
-</nav>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="tracker.html">Tracker</a>
+        <a href="submit.html">Submit</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="PASTE-YOUR-REPORT-FORM-LINK-HERE" target="_blank">Report Error</a>
+      </div>
+    </nav>
+
     <section class="hero">
       <div class="card">
         <div class="badge">Magic: The Gathering Serialized Tracker</div>
 
         <h1>Mox Jasper Serialized Tracker</h1>
+        <p class="last-updated">Last updated: May 2026</p>
 
         <p class="subtitle">
           A community-built tracker for known serialized Mox Jasper cards.
@@ -41,46 +40,52 @@
           </div>
 
           <div class="stat-box">
-            <div class="stat-number">1</div>
+            <div id="home-confirmed-count" class="stat-number">0</div>
             <div class="stat-label">Confirmed So Far</div>
           </div>
 
           <div class="stat-box">
-            <div class="stat-number">499</div>
+            <div id="home-unknown-count" class="stat-number">500</div>
             <div class="stat-label">Still Unknown</div>
           </div>
         </div>
-<div class="info-section">
-  <h2>How Verification Works</h2>
 
-  <p>
-    A serial number is marked confirmed when there is clear proof showing
-    the card and its serial number. Proof can include a photo, marketplace
-    listing, grading cert, Reddit post, Facebook post, or another public source.
-  </p>
-
-  <p>
-    Submitted sightings are reviewed before being added to the tracker.
-  </p>
-</div>
         <div class="info-section">
-  <h2>Recently Confirmed</h2>
+          <h2>How Verification Works</h2>
 
-  <div class="recent-card">
-    <div>
-      <div class="recent-number">#352</div>
-      <div class="recent-details">Confirmed — MrKaiKendal</div>
-    </div>
+          <p>
+            A serial number is marked confirmed when there is clear proof showing
+            the card and its serial number. Proof can include a photo, marketplace
+            listing, grading cert, Reddit post, Facebook post, or another public source.
+          </p>
 
-    <a class="button secondary-button" href="tracker.html">View in Tracker</a>
-  </div>
-<div class="button-row home-button-row">
-  <a class="button" href="tracker.html">View Tracker</a>
-  <a class="button secondary-button" href="submit.html">Submit a Sighting</a>
-  <a class="button secondary-button" href="about.html">About</a>
-  <a class="button secondary-button" href="https://docs.google.com/forms/d/e/1FAIpQLScrl7_mSrgh9yv5SRMidlg3sxOol-Kw7fdh2qIpRb-uSu1Ktw/viewform?usp=header" target="_blank">Report an Error</a>
-</div>
+          <p>
+            Submitted sightings are reviewed before being added to the tracker.
+          </p>
+        </div>
+
+        <div class="info-section">
+          <h2>Recently Confirmed</h2>
+
+          <div id="home-recent-confirmed"></div>
+        </div>
+
+        <div class="button-row home-button-row">
+          <a class="button" href="tracker.html">View Tracker</a>
+          <a class="button secondary-button" href="submit.html">Submit a Sighting</a>
+          <a class="button secondary-button" href="about.html">About</a>
+          <a class="button secondary-button" href="https://forms.gle/mD725Z9h9ZyDmzw18" target="_blank">Report an Error</a>
+        </div>
       </div>
     </section>
+
+    <footer class="site-footer">
+      <p>
+        Mox Jasper Serialized Tracker is a fan-made project and is not affiliated with Wizards of the Coast.
+      </p>
+    </footer>
+
+    <script src="cards.js"></script>
+    <script src="home.js"></script>
   </body>
 </html>
