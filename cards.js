@@ -103,4 +103,12 @@
     proof: "https://www.ebay.com/itm/297187169570",
       dateAdded: "2026-05-09"
     },
+    117: {
+    status: "Confirmed",
+    owner: "Chris Dapostrophe",
+    note: "Submitted in Facebook post made by site owner",
+    image: "images/117.jpg",
+    proof: "https://www.facebook.com/groups/657646125885289/posts/1503643821285511",
+      dateAdded: "2026-05-09"
+    },
 };
