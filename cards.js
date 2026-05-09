@@ -37,3 +37,11 @@
     proof: "https://www.ebay.com/itm/277954392123"
   }
 };
+295: {
+    status: "Confirmed",
+    owner: "lati43",
+    note: "Spotted in eBay listing on 05/08/26.",
+    image: "images/295.jpg",
+    proof: "https://www.ebay.com/itm/127851346845?"
+  }
+},
