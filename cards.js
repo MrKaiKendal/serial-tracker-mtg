@@ -1,4 +1,3 @@
-const knownSerials = {
   // Add confirmed or pending serials below.
   //
   // Confirmed example:
@@ -21,19 +20,20 @@ const knownSerials = {
   //   proof: ""
   // }
 
+  const knownSerials = {
   352: {
     status: "Confirmed",
     owner: "MrKaiKendal",
     note: "Owned by site creator. Serial number #352 confirmed.",
     image: "images/352.jpg",
-proof: "images/352.jpg"
-  }
-},
- 102: {
-    status: "Confrimed",
+    proof: "images/352.jpg"
+  },
+
+  102: {
+    status: "Confirmed",
     owner: "therealamericanbeauty",
-    note: "Spotted in eBay listing on 05/08/26",
+    note: "Spotted in eBay listing 05/08/26.",
     image: "images/102.jpg",
-    proof: "https://www.ebay.com/itm/277954392123?"
+    proof: "https://www.ebay.com/itm/277954392123"
   }
 };
