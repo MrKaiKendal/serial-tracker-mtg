@@ -87,4 +87,12 @@
     proof: "https://www.tcgplayer.com/product/listing/E_mW37tl8fQ1",
       dateAdded: "2026-05-09"
     },
+    127: {
+    status: "Confirmed",
+    owner: "Unknown",
+    note: "Spotted in TCG on an old listing.",
+    image: "images/127.jpg",
+    proof: "https://www.tcgplayer.com/product/listing/tI8VNTm0_zU1",
+      dateAdded: "2026-05-09"
+    },
 };
