@@ -23,12 +23,21 @@ if (confirmedList) {
     return entry[1].status === "Confirmed";
   });
 
-  if (confirmedEntries.length === 0) {
+  confirmedEntries.sort(function (a, b) {
+    const dateA = new Date(a[1].dateAdded || "2000-01-01");
+    const dateB = new Date(b[1].dateAdded || "2000-01-01");
+
+    return dateB - dateA;
+  });
+
+  const recentConfirmedEntries = confirmedEntries.slice(0, 5);
+
+  if (recentConfirmedEntries.length === 0) {
     confirmedList.innerHTML = `
       <p class="confirmed-list-empty">No confirmed serials yet.</p>
     `;
   } else {
-    confirmedEntries.forEach(function (entry) {
+    recentConfirmedEntries.forEach(function (entry) {
       const number = Number(entry[0]);
       const cardInfo = entry[1];
       const serialText = String(number).padStart(3, "0");
