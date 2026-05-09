@@ -43,5 +43,12 @@
     note: "Spotted in eBay listing on 05/08/26.",
     image: "images/295.jpg",
     proof: "https://www.ebay.com/itm/127851346845?"
+},
+    252: {
+    status: "Confirmed",
+    owner: "PSA",
+    note: "Spotted in eBay listing on 05/08/26.",
+    image: "images/252.jpg",
+    proof: "https://www.ebay.com/itm/116748709195?"
   }
 };
