@@ -95,4 +95,12 @@
     proof: "https://www.tcgplayer.com/product/listing/tI8VNTm0_zU1",
       dateAdded: "2026-05-09"
     },
+     452: {
+    status: "Confirmed",
+    owner: "Unknown",
+    note: "Spotted in closed eBay listing.",
+    image: "images/452.jpg",
+    proof: "https://www.ebay.com/itm/297187169570",
+      dateAdded: "2026-05-09"
+    },
 };
