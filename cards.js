@@ -26,7 +26,9 @@
     owner: "MrKaiKendal",
     note: "Owned by site creator. Serial number #352 confirmed.",
     image: "images/352.jpg",
-    proof: "images/352.jpg"
+    proof: "images/352.jpg",
+    dateAdded: "2026-05-07"
+
   },
 
   102: {
@@ -34,21 +36,23 @@
     owner: "therealamericanbeauty",
     note: "Spotted in eBay listing on 05/08/26.",
     image: "images/102.jpg",
-    proof: "https://www.ebay.com/itm/277954392123"
-  
+    proof: "https://www.ebay.com/itm/277954392123",
+  dateAdded: "2026-05-07"
 },
 295: {
     status: "Confirmed",
     owner: "lati43",
     note: "Spotted in eBay listing on 05/08/26.",
     image: "images/295.jpg",
-    proof: "https://www.ebay.com/itm/127851346845?"
+    proof: "https://www.ebay.com/itm/127851346845?",
+  dateAdded: "2026-05-08"
 },
     252: {
     status: "Confirmed",
     owner: "PSA",
     note: "Spotted in eBay listing on 05/08/26.",
     image: "images/252.jpg",
-    proof: "https://www.ebay.com/itm/116748709195?"
+    proof: "https://www.ebay.com/itm/116748709195?",
+      dateAdded: "2026-05-08"
   }
 };
