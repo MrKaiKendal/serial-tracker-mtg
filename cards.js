@@ -36,7 +36,7 @@
     image: "images/102.jpg",
     proof: "https://www.ebay.com/itm/277954392123"
   }
-};
+},
 295: {
     status: "Confirmed",
     owner: "lati43",
@@ -44,4 +44,4 @@
     image: "images/295.jpg",
     proof: "https://www.ebay.com/itm/127851346845?"
   }
-},
+};
