@@ -54,5 +54,13 @@
     image: "images/252.jpg",
     proof: "https://www.ebay.com/itm/116748709195?",
       dateAdded: "2026-05-08"
-  }
+  },
+    107: {
+    status: "Confirmed",
+    owner: "Unknown",
+    note: "Spotted in TCG on an old listing.",
+    image: "images/107.jpg",
+    proof: "https://www.tcgplayer.com/product/listing/N9GJekDFEsU1/",
+      dateAdded: "2026-05-09"
+    },
 };
