@@ -159,4 +159,12 @@
     proof: "https://www.facebook.com/groups/657646125885289/posts/1503643821285511",
       dateAdded: "2026-05-09"
     },
+     294: {
+    status: "Confirmed",
+    owner: "Luc Lapierre",
+    note: "Submitted in Facebook post made by site owner",
+    image: "images/294.jpg",
+    proof: "https://www.facebook.com/groups/657646125885289/posts/1503643821285511",
+      dateAdded: "2026-05-09"
+    },
 };
