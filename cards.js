@@ -49,8 +49,8 @@
 },
     252: {
     status: "Confirmed",
-    owner: "PSA",
-    note: "Spotted in eBay listing on 05/08/26.",
+    owner: "Andrew Gotianse",
+    note: "Spotted in PSA Vault, owned by Andrew Gotianse.",
     image: "images/252.jpg",
     proof: "https://www.ebay.com/itm/116748709195?",
       dateAdded: "2026-05-08"
