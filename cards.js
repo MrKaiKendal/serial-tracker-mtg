@@ -179,7 +179,23 @@
     status: "Confirmed",
     owner: "Zachary Bidwell",
     note: "Submitted in Facebook post made by site owner",
-    image: "images/012.jpg",
+    image: "images/02.jpg",
+    proof: "https://www.facebook.com/groups/657646125885289/posts/1503643821285511",
+      dateAdded: "2026-05-10"
+    },
+     044: {
+    status: "Confirmed",
+    owner: "David Pedro",
+    note: "Submitted in Facebook post made by site owner",
+    image: "images/44.jpg",
+    proof: "https://www.facebook.com/groups/657646125885289/posts/1503643821285511",
+      dateAdded: "2026-05-10"
+    },
+     089: {
+    status: "Confirmed",
+    owner: "Garette Ford",
+    note: "Submitted in Facebook post made by site owner",
+    image: "images/89.jpg",
     proof: "https://www.facebook.com/groups/657646125885289/posts/1503643821285511",
       dateAdded: "2026-05-10"
     },
