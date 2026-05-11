@@ -111,7 +111,7 @@
     proof: "https://www.facebook.com/groups/657646125885289/posts/1503643821285511",
       dateAdded: "2026-05-09"
     },
-     093: {
+     93: {
     status: "Confirmed",
     owner: "George Wielgosz",
     note: "Submitted in Facebook post made by site owner",
@@ -175,15 +175,15 @@
     proof: "https://www.facebook.com/groups/657646125885289/posts/1503643821285511",
       dateAdded: "2026-05-10"
     },
-    012: {
+    12: {
     status: "Confirmed",
     owner: "Zachary Bidwell",
     note: "Submitted in Facebook post made by site owner",
-    image: "images/02.jpg",
+    image: "images/12.jpg",
     proof: "https://www.facebook.com/groups/657646125885289/posts/1503643821285511",
       dateAdded: "2026-05-10"
     },
-     044: {
+     44: {
     status: "Confirmed",
     owner: "David Pedro",
     note: "Submitted in Facebook post made by site owner",
@@ -191,7 +191,7 @@
     proof: "https://www.facebook.com/groups/657646125885289/posts/1503643821285511",
       dateAdded: "2026-05-10"
     },
-     089: {
+     89: {
     status: "Confirmed",
     owner: "Garette Ford",
     note: "Submitted in Facebook post made by site owner",
