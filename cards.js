@@ -175,4 +175,12 @@
     proof: "https://www.facebook.com/groups/657646125885289/posts/1503643821285511",
       dateAdded: "2026-05-10"
     },
+    012: {
+    status: "Confirmed",
+    owner: "Zachary Bidwell",
+    note: "Submitted in Facebook post made by site owner",
+    image: "images/012.jpg",
+    proof: "https://www.facebook.com/groups/657646125885289/posts/1503643821285511",
+      dateAdded: "2026-05-10"
+    },
 };
